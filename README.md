@@ -8,9 +8,9 @@ Run
 
     1. git clone https://github.com/alexdennis/todoapp-react.git
 
-    2. npm install
+    2. cd /path/to/todoapp-react
 
-    3. cd /path/to/todoapp-react
+    3. npm install
 
     4. php -S localhost:8080
 
