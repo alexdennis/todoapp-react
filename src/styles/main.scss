@@ -1,0 +1,75 @@
+@import "vendor/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+
+div.todos {
+    @extend .panel;
+    @extend .panel-default;
+
+    .header {
+        @extend .panel-heading;
+
+        margin: 0px;
+    }
+}
+
+div.todoList {
+    @extend .list-group;
+
+    div.todoItem {
+        @extend .list-group-item;
+
+        &.done {
+            text-decoration: line-through;
+        }
+
+        input[type=checkbox] {
+            margin-right: 10px;
+        }
+    }
+}
+
+form.todoForm {
+    input {
+        @extend .form-control;
+        margin: 10px 0px;
+    }
+}
+
+div.commentBox {
+    @extend .container;
+
+    h1 {
+        @extend .text-center;
+    }
+}
+
+div.comment {
+    @extend .alert;
+    @extend .alert-info;
+
+    h2 {
+        font-size: 0.95em;
+    }
+
+    span {
+        font-size: 1.3em;
+    }
+}
+
+div.commentList {
+    @extend .container-fluid;
+}
+
+form.commentForm {
+    @extend .container-fluid;
+    @extend .well;
+
+    button {
+        @extend .btn;
+        @extend .btn-primary;
+    }
+
+    input {
+        @extend .form-control;
+        margin: 10px 0px;
+    }
+}
